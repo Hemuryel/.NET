@@ -11,35 +11,41 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppConjuntos", "Cons
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppConjuntosModelo", "ConsoleAppConjuntosModelo\ConsoleAppConjuntosModelo.csproj", "{95C45BB8-6DB7-41ED-8F11-6765A96E2AE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppLinkedList", "ConsoleAppLinkedList\ConsoleAppLinkedList.csproj", "{2B9B6294-4E23-4BBC-9D9F-C9B0895C0D4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppLinkedList", "ConsoleAppLinkedList\ConsoleAppLinkedList.csproj", "{2B9B6294-4E23-4BBC-9D9F-C9B0895C0D4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppStack", "ConsoleAppStack\ConsoleAppStack.csproj", "{0E2A9EC6-49AD-4440-8311-3FD16FC511A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppStack", "ConsoleAppStack\ConsoleAppStack.csproj", "{0E2A9EC6-49AD-4440-8311-3FD16FC511A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppQueue", "ConsoleAppQueue\ConsoleAppQueue.csproj", "{1FDD9E8F-6CF5-4A6B-8CAD-B956CF4BA3A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppQueue", "ConsoleAppQueue\ConsoleAppQueue.csproj", "{1FDD9E8F-6CF5-4A6B-8CAD-B956CF4BA3A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppArray", "ConsoleAppArray\ConsoleAppArray.csproj", "{8388CDE7-335A-4A39-9C2B-582DE61A9065}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppArray", "ConsoleAppArray\ConsoleAppArray.csproj", "{8388CDE7-335A-4A39-9C2B-582DE61A9065}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppArraysColecoes", "ConsoleAppArraysColecoes\ConsoleAppArraysColecoes.csproj", "{0953F5B9-B66E-4B85-B855-01DBD99D77C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppArraysColecoes", "ConsoleAppArraysColecoes\ConsoleAppArraysColecoes.csproj", "{0953F5B9-B66E-4B85-B855-01DBD99D77C3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppSortedList", "ConsoleAppSortedList\ConsoleAppSortedList.csproj", "{FFF71DE0-41E8-4694-A9D4-6D2C1F0180BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppSortedSet", "ConsoleAppSortedSet\ConsoleAppSortedSet.csproj", "{D734C7EF-0B4A-4DE8-B3AB-40B1F01D417F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppSortedSet", "ConsoleAppSortedSet\ConsoleAppSortedSet.csproj", "{D734C7EF-0B4A-4DE8-B3AB-40B1F01D417F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppArraysMultidimensionais", "ConsoleAppArraysMultidimensionais\ConsoleAppArraysMultidimensionais.csproj", "{3C124A77-368A-4514-98B9-0C7ED630FCAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppJaggedArrays", "ConsoleAppJaggedArrays\ConsoleAppJaggedArrays.csproj", "{B86DF1B7-4BAE-497C-9C1B-458B97FBC395}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppJaggedArrays", "ConsoleAppJaggedArrays\ConsoleAppJaggedArrays.csproj", "{B86DF1B7-4BAE-497C-9C1B-458B97FBC395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppConsultandoCollectionsLinq", "ConsoleAppConsultandoCollections\ConsoleAppConsultandoCollectionsLinq.csproj", "{8355CE99-3CC4-4115-AF89-556D59974E1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppConsultandoCollectionsLinq", "ConsoleAppConsultandoCollections\ConsoleAppConsultandoCollectionsLinq.csproj", "{8355CE99-3CC4-4115-AF89-556D59974E1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppOperadoresConjuntosLinq", "ConsoleAppOperadoresConjuntos\ConsoleAppOperadoresConjuntosLinq.csproj", "{0A723C32-9840-4CA7-B9DF-0EFB3618DE3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppOperadoresConjuntosLinq", "ConsoleAppOperadoresConjuntos\ConsoleAppOperadoresConjuntosLinq.csproj", "{0A723C32-9840-4CA7-B9DF-0EFB3618DE3E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppCovarianciaLinq", "ConsoleAppCovarianciaLinq\ConsoleAppCovarianciaLinq.csproj", "{7729622A-3D54-4FCF-AFF6-21C23708E4E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppNumerosPorExtenso", "ConsoleAppNumerosPorExtenso\ConsoleAppNumerosPorExtenso.csproj", "{B32AC52B-7187-4797-B2FA-4AD8E06A1AE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppNumerosPorExtenso", "ConsoleAppNumerosPorExtenso\ConsoleAppNumerosPorExtenso.csproj", "{B32AC52B-7187-4797-B2FA-4AD8E06A1AE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppContratoDeTrabalho", "ConsoleAppContratoDeTrabalho\ConsoleAppContratoDeTrabalho.csproj", "{835080C8-D60A-42FF-BBC0-5B2FB6486C91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppContratoDeTrabalho", "ConsoleAppContratoDeTrabalho\ConsoleAppContratoDeTrabalho.csproj", "{835080C8-D60A-42FF-BBC0-5B2FB6486C91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppEventsDelegates", "ConsoleAppEventsDelegates\ConsoleAppEventsDelegates.csproj", "{B18BB8F5-2D48-488E-8702-F218E4DB8DC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppEventsDelegates", "ConsoleAppEventsDelegates\ConsoleAppEventsDelegates.csproj", "{B18BB8F5-2D48-488E-8702-F218E4DB8DC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBank.Core", "Paralelismo\ByteBank.Core\ByteBank.Core.csproj", "{3B254A19-C3FD-4246-B319-987933185190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBank.View", "Paralelismo\ByteBank.View\ByteBank.View.csproj", "{3F1CCE92-E216-4D46-AC05-05259EE5E61B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paralelismo", "Paralelismo", "{BE4AA31F-5B48-444C-B2A7-2B6A8238597F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,9 +129,21 @@ Global
 		{B18BB8F5-2D48-488E-8702-F218E4DB8DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B18BB8F5-2D48-488E-8702-F218E4DB8DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B18BB8F5-2D48-488E-8702-F218E4DB8DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B254A19-C3FD-4246-B319-987933185190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B254A19-C3FD-4246-B319-987933185190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B254A19-C3FD-4246-B319-987933185190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B254A19-C3FD-4246-B319-987933185190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F1CCE92-E216-4D46-AC05-05259EE5E61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F1CCE92-E216-4D46-AC05-05259EE5E61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F1CCE92-E216-4D46-AC05-05259EE5E61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F1CCE92-E216-4D46-AC05-05259EE5E61B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3B254A19-C3FD-4246-B319-987933185190} = {BE4AA31F-5B48-444C-B2A7-2B6A8238597F}
+		{3F1CCE92-E216-4D46-AC05-05259EE5E61B} = {BE4AA31F-5B48-444C-B2A7-2B6A8238597F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {824A7B85-872F-4DD7-84AB-C31E9F0D14AE}

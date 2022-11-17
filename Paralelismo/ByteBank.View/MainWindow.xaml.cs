@@ -153,11 +153,15 @@ namespace ByteBank.View
 
             var contas = r_Repositorio.GetContaClientes();
 
+            PgsProgresso.Maximum = contas.Count();
+
             AtualizarView(new List<string>(), TimeSpan.Zero);
 
             var inicio = DateTime.Now;
 
-            var resultado = await ConsolidarContas(contas);
+            var byteBankProgress = new ByteBankProgress<string>(str => PgsProgresso.Value++);
+
+            var resultado = await ConsolidarContas(contas, byteBankProgress);
 
             var fim = DateTime.Now;
             AtualizarView(resultado, fim - inicio);
@@ -224,10 +228,26 @@ namespace ByteBank.View
         //    });
         //}
 
-        private async Task<string[]> ConsolidarContas(IEnumerable<ContaCliente> contas)
+        private async Task<string[]> ConsolidarContas(IEnumerable<ContaCliente> contas, IProgress<string> reportadorProgresso)
         {
+            //var taskSchedulerGui = TaskScheduler.FromCurrentSynchronizationContext();
             var tasks = contas.Select(conta =>
-                Task.Factory.StartNew(() => r_Servico.ConsolidarMovimentacao(conta))
+                Task.Factory.StartNew(() =>
+                {
+                    //var resultadoConsolidacao = Task.Factory.StartNew(() => r_Servico.ConsolidarMovimentacao(conta));
+                    var resultadoConsolidacao = r_Servico.ConsolidarMovimentacao(conta);
+
+                    reportadorProgresso.Report(resultadoConsolidacao);
+
+                    //Task.Factory.StartNew(
+                    //    () => PgsProgresso.Value++,
+                    //    CancellationToken.None,
+                    //    TaskCreationOptions.None,
+                    //    taskSchedulerGui
+                    //);
+
+                    return resultadoConsolidacao;
+                })
             );
 
             var resultado = await Task.WhenAll(tasks);

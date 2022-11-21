@@ -129,6 +129,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "caelum-stella-csharp", "Ref
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "caelum-stella-csharp-netcore-test", "Refatoracao\caelum-stella-csharp-test\caelum-stella-csharp-netcore-test.csproj", "{65A0CFAA-9543-4BB2-8633-7ED9095261F2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "refatoracao2", "Refatoracao\refatoracao2\refatoracao2.csproj", "{6FA19CD4-A7D9-40DD-B1DE-6870A8D1A705}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "refatoracao3", "Refatoracao\refatoracao3\refatoracao3.csproj", "{2CF1A652-4FC3-4048-A156-15F1042AC071}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -323,6 +327,14 @@ Global
 		{65A0CFAA-9543-4BB2-8633-7ED9095261F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65A0CFAA-9543-4BB2-8633-7ED9095261F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65A0CFAA-9543-4BB2-8633-7ED9095261F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA19CD4-A7D9-40DD-B1DE-6870A8D1A705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA19CD4-A7D9-40DD-B1DE-6870A8D1A705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA19CD4-A7D9-40DD-B1DE-6870A8D1A705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA19CD4-A7D9-40DD-B1DE-6870A8D1A705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CF1A652-4FC3-4048-A156-15F1042AC071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CF1A652-4FC3-4048-A156-15F1042AC071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CF1A652-4FC3-4048-A156-15F1042AC071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF1A652-4FC3-4048-A156-15F1042AC071}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -383,6 +395,8 @@ Global
 		{44A8BAAE-2F14-48CF-9E28-F3A2E0385CEB} = {AF08CC33-4475-438F-82A4-9CE1B2BBDA45}
 		{5C959A02-A2E9-4BB9-A25E-2745C58EB67D} = {AF08CC33-4475-438F-82A4-9CE1B2BBDA45}
 		{65A0CFAA-9543-4BB2-8633-7ED9095261F2} = {AF08CC33-4475-438F-82A4-9CE1B2BBDA45}
+		{6FA19CD4-A7D9-40DD-B1DE-6870A8D1A705} = {AF08CC33-4475-438F-82A4-9CE1B2BBDA45}
+		{2CF1A652-4FC3-4048-A156-15F1042AC071} = {AF08CC33-4475-438F-82A4-9CE1B2BBDA45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {824A7B85-872F-4DD7-84AB-C31E9F0D14AE}

@@ -11,8 +11,4 @@
     <Folder Include="Aula4\R34.ConsolidateDuplicateConditionalFragments\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="SistemaWinForms\SistemaWinForms.csproj" />
-  </ItemGroup>
-
 </Project>

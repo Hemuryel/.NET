@@ -133,6 +133,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "refatoracao2", "Refatoracao
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "refatoracao3", "Refatoracao\refatoracao3\refatoracao3.csproj", "{1094E895-1A31-477E-9299-E8A879970A49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraTunes", "AluraTunes\AluraTunes.csproj", "{9BEE286B-1D11-4BC5-8831-93CF3264ABC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -335,6 +337,10 @@ Global
 		{1094E895-1A31-477E-9299-E8A879970A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1094E895-1A31-477E-9299-E8A879970A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1094E895-1A31-477E-9299-E8A879970A49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BEE286B-1D11-4BC5-8831-93CF3264ABC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEE286B-1D11-4BC5-8831-93CF3264ABC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEE286B-1D11-4BC5-8831-93CF3264ABC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEE286B-1D11-4BC5-8831-93CF3264ABC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -397,6 +403,7 @@ Global
 		{65A0CFAA-9543-4BB2-8633-7ED9095261F2} = {AF08CC33-4475-438F-82A4-9CE1B2BBDA45}
 		{6FA19CD4-A7D9-40DD-B1DE-6870A8D1A705} = {AF08CC33-4475-438F-82A4-9CE1B2BBDA45}
 		{1094E895-1A31-477E-9299-E8A879970A49} = {AF08CC33-4475-438F-82A4-9CE1B2BBDA45}
+		{9BEE286B-1D11-4BC5-8831-93CF3264ABC5} = {AEC843CB-0D18-445B-96E1-69A6828E7F93}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {824A7B85-872F-4DD7-84AB-C31E9F0D14AE}

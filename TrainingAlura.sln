@@ -43,43 +43,39 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBank.Core", "Paralelism
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alura.Loja.Testes.ConsoleApp", "EF\Alura.Loja\Alura.Loja.Testes.ConsoleApp\Alura.Loja.Testes.ConsoleApp.csproj", "{D59A32D0-B933-45D7-8922-483BF3C08524}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppArray", "Collections\ConsoleAppArray\ConsoleAppArray.csproj", "{76CC18B4-AF42-4355-B016-2B50415ECCF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array", "Collections\ConsoleAppArray\Array.csproj", "{76CC18B4-AF42-4355-B016-2B50415ECCF3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppArraysColecoes", "Collections\ConsoleAppArraysColecoes\ConsoleAppArraysColecoes.csproj", "{0610F85C-F008-41FD-89C3-0F9B9F05D393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysMultidimensionais", "Collections\ConsoleAppArraysMultidimensionais\ArraysMultidimensionais.csproj", "{1DA6D36A-A3B6-48E8-BDAD-B1DED4B14219}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppArraysMultidimensionais", "Collections\ConsoleAppArraysMultidimensionais\ConsoleAppArraysMultidimensionais.csproj", "{1DA6D36A-A3B6-48E8-BDAD-B1DED4B14219}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conjuntos", "Collections\ConsoleAppConjuntos\Conjuntos.csproj", "{9616C2B6-B9B5-407B-A29D-852150AF0684}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppConjuntos", "Collections\ConsoleAppConjuntos\ConsoleAppConjuntos.csproj", "{9616C2B6-B9B5-407B-A29D-852150AF0684}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConjuntosModelo", "Collections\ConsoleAppConjuntosModelo\ConjuntosModelo.csproj", "{6459F772-A9C6-4EB2-ACFA-6654E2A6287C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppConjuntosModelo", "Collections\ConsoleAppConjuntosModelo\ConsoleAppConjuntosModelo.csproj", "{6459F772-A9C6-4EB2-ACFA-6654E2A6287C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "Collections\ConsoleAppLinkedList\LinkedList.csproj", "{AA3AE5BE-109C-4DAC-80C4-A189C8F561F2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppJaggedArrays", "Collections\ConsoleAppJaggedArrays\ConsoleAppJaggedArrays.csproj", "{92F1FAB9-0EF3-4AED-9AB3-3B97E2CF264F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListasDeObjetos", "Collections\ConsoleAppListasDeObjetos\ListasDeObjetos.csproj", "{726EA0D6-C6C6-42CD-9A0C-5442DD6D14A6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppLinkedList", "Collections\ConsoleAppLinkedList\ConsoleAppLinkedList.csproj", "{AA3AE5BE-109C-4DAC-80C4-A189C8F561F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperadoresConjuntosLinq", "Collections\ConsoleAppOperadoresConjuntos\OperadoresConjuntosLinq.csproj", "{DDF5EC6D-9554-41CE-BFAA-602826147EA6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppListasDeObjetos", "Collections\ConsoleAppListasDeObjetos\ConsoleAppListasDeObjetos.csproj", "{726EA0D6-C6C6-42CD-9A0C-5442DD6D14A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queue", "Collections\ConsoleAppQueue\Queue.csproj", "{526DEF07-EA6D-4D73-9E1E-1E4F79C8F7C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppOperadoresConjuntosLinq", "Collections\ConsoleAppOperadoresConjuntos\ConsoleAppOperadoresConjuntosLinq.csproj", "{DDF5EC6D-9554-41CE-BFAA-602826147EA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortedList", "Collections\ConsoleAppSortedList\SortedList.csproj", "{27C3EA19-3CFF-4F9D-B0A5-677A3376F92D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppQueue", "Collections\ConsoleAppQueue\ConsoleAppQueue.csproj", "{526DEF07-EA6D-4D73-9E1E-1E4F79C8F7C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortedSet", "Collections\ConsoleAppSortedSet\SortedSet.csproj", "{DB9EE586-D71D-4D6D-96D4-23D485030C55}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppSortedList", "Collections\ConsoleAppSortedList\ConsoleAppSortedList.csproj", "{27C3EA19-3CFF-4F9D-B0A5-677A3376F92D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack", "Collections\ConsoleAppStack\Stack.csproj", "{F9DF84A2-5098-4E17-B313-1703FEB51656}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppSortedSet", "Collections\ConsoleAppSortedSet\ConsoleAppSortedSet.csproj", "{DB9EE586-D71D-4D6D-96D4-23D485030C55}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppStack", "Collections\ConsoleAppStack\ConsoleAppStack.csproj", "{F9DF84A2-5098-4E17-B313-1703FEB51656}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppListas", "Collections\ConsoleAppListas\ConsoleAppListas.csproj", "{370B931A-3639-48DC-A628-9685744BE582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Listas", "Collections\ConsoleAppListas\Listas.csproj", "{370B931A-3639-48DC-A628-9685744BE582}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LINQ", "LINQ", "{AEC843CB-0D18-445B-96E1-69A6828E7F93}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppConsultandoCollectionsLinq", "LINQ\ConsoleAppConsultandoCollections\ConsoleAppConsultandoCollectionsLinq.csproj", "{E9F99746-2C53-4E72-A6E6-3F65B0446590}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsultandoCollectionsLinq", "LINQ\ConsoleAppConsultandoCollections\ConsultandoCollectionsLinq.csproj", "{E9F99746-2C53-4E72-A6E6-3F65B0446590}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppCovarianciaLinq", "LINQ\ConsoleAppCovarianciaLinq\ConsoleAppCovarianciaLinq.csproj", "{08AD3F4B-E2AC-4669-8B45-F4B2CDBE6E55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CovarianciaLinq", "LINQ\ConsoleAppCovarianciaLinq\CovarianciaLinq.csproj", "{08AD3F4B-E2AC-4669-8B45-F4B2CDBE6E55}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delegates", "Delegates", "{FEC5D25E-19ED-4A38-A1AA-120F8F34D7B9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppEventsDelegates", "Delegates\ConsoleAppEventsDelegates\ConsoleAppEventsDelegates.csproj", "{26793968-BD59-4F60-AC6B-B9669F70A620}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsDelegates", "Delegates\ConsoleAppEventsDelegates\EventsDelegates.csproj", "{26793968-BD59-4F60-AC6B-B9669F70A620}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OO-parte1-explorando-a-linguagem", "OO-parte1-explorando-a-linguagem", "{AAA8542E-87A1-4D24-87A8-2C4BA0B890AE}"
 EndProject
@@ -133,7 +129,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "refatoracao2", "Refatoracao
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "refatoracao3", "Refatoracao\refatoracao3\refatoracao3.csproj", "{1094E895-1A31-477E-9299-E8A879970A49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraTunes", "AluraTunes\AluraTunes.csproj", "{9BEE286B-1D11-4BC5-8831-93CF3264ABC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToObjects", "AluraTunes\LinqToObjects.csproj", "{9BEE286B-1D11-4BC5-8831-93CF3264ABC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToXml", "AluraTunesLinqToXml\LinqToXml.csproj", "{A39424E3-176C-4387-9752-66456B4326D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToEntities", "LinqToEntities\LinqToEntities.csproj", "{1ABC5DD5-FCF5-44C5-BCB2-EB48616AE9DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,10 +189,6 @@ Global
 		{76CC18B4-AF42-4355-B016-2B50415ECCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76CC18B4-AF42-4355-B016-2B50415ECCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76CC18B4-AF42-4355-B016-2B50415ECCF3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0610F85C-F008-41FD-89C3-0F9B9F05D393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0610F85C-F008-41FD-89C3-0F9B9F05D393}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0610F85C-F008-41FD-89C3-0F9B9F05D393}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0610F85C-F008-41FD-89C3-0F9B9F05D393}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1DA6D36A-A3B6-48E8-BDAD-B1DED4B14219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1DA6D36A-A3B6-48E8-BDAD-B1DED4B14219}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DA6D36A-A3B6-48E8-BDAD-B1DED4B14219}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -205,10 +201,6 @@ Global
 		{6459F772-A9C6-4EB2-ACFA-6654E2A6287C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6459F772-A9C6-4EB2-ACFA-6654E2A6287C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6459F772-A9C6-4EB2-ACFA-6654E2A6287C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92F1FAB9-0EF3-4AED-9AB3-3B97E2CF264F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92F1FAB9-0EF3-4AED-9AB3-3B97E2CF264F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92F1FAB9-0EF3-4AED-9AB3-3B97E2CF264F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92F1FAB9-0EF3-4AED-9AB3-3B97E2CF264F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AA3AE5BE-109C-4DAC-80C4-A189C8F561F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AA3AE5BE-109C-4DAC-80C4-A189C8F561F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA3AE5BE-109C-4DAC-80C4-A189C8F561F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -341,6 +333,14 @@ Global
 		{9BEE286B-1D11-4BC5-8831-93CF3264ABC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BEE286B-1D11-4BC5-8831-93CF3264ABC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BEE286B-1D11-4BC5-8831-93CF3264ABC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A39424E3-176C-4387-9752-66456B4326D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39424E3-176C-4387-9752-66456B4326D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39424E3-176C-4387-9752-66456B4326D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39424E3-176C-4387-9752-66456B4326D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ABC5DD5-FCF5-44C5-BCB2-EB48616AE9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABC5DD5-FCF5-44C5-BCB2-EB48616AE9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABC5DD5-FCF5-44C5-BCB2-EB48616AE9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABC5DD5-FCF5-44C5-BCB2-EB48616AE9DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -362,14 +362,12 @@ Global
 		{3B254A19-C3FD-4246-B319-987933185190} = {BE4AA31F-5B48-444C-B2A7-2B6A8238597F}
 		{D59A32D0-B933-45D7-8922-483BF3C08524} = {250099B2-E0EB-405D-8C95-C16B7A7D9C19}
 		{76CC18B4-AF42-4355-B016-2B50415ECCF3} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
-		{0610F85C-F008-41FD-89C3-0F9B9F05D393} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
 		{1DA6D36A-A3B6-48E8-BDAD-B1DED4B14219} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
 		{9616C2B6-B9B5-407B-A29D-852150AF0684} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
 		{6459F772-A9C6-4EB2-ACFA-6654E2A6287C} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
-		{92F1FAB9-0EF3-4AED-9AB3-3B97E2CF264F} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
 		{AA3AE5BE-109C-4DAC-80C4-A189C8F561F2} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
 		{726EA0D6-C6C6-42CD-9A0C-5442DD6D14A6} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
-		{DDF5EC6D-9554-41CE-BFAA-602826147EA6} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
+		{DDF5EC6D-9554-41CE-BFAA-602826147EA6} = {AEC843CB-0D18-445B-96E1-69A6828E7F93}
 		{526DEF07-EA6D-4D73-9E1E-1E4F79C8F7C5} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
 		{27C3EA19-3CFF-4F9D-B0A5-677A3376F92D} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
 		{DB9EE586-D71D-4D6D-96D4-23D485030C55} = {896F9BB3-54D5-417C-B600-F9603662B5CD}
@@ -404,6 +402,8 @@ Global
 		{6FA19CD4-A7D9-40DD-B1DE-6870A8D1A705} = {AF08CC33-4475-438F-82A4-9CE1B2BBDA45}
 		{1094E895-1A31-477E-9299-E8A879970A49} = {AF08CC33-4475-438F-82A4-9CE1B2BBDA45}
 		{9BEE286B-1D11-4BC5-8831-93CF3264ABC5} = {AEC843CB-0D18-445B-96E1-69A6828E7F93}
+		{A39424E3-176C-4387-9752-66456B4326D2} = {AEC843CB-0D18-445B-96E1-69A6828E7F93}
+		{1ABC5DD5-FCF5-44C5-BCB2-EB48616AE9DF} = {AEC843CB-0D18-445B-96E1-69A6828E7F93}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {824A7B85-872F-4DD7-84AB-C31E9F0D14AE}

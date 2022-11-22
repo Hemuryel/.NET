@@ -30,6 +30,23 @@
             {
                 Console.WriteLine($"{genero.Id}\t{genero.Nome}");
             }
+
+            // listar músicas
+            var musicas = new List<Musica>
+            {
+                new Musica { Id = 1, Nome = "Sweet Child O'Mine", GeneroId = 1 },
+                new Musica { Id = 2, Nome = "I Shot The Sheriff", GeneroId = 2 },
+                new Musica { Id = 3, Nome = "Danúbio Azul", GeneroId = 5 }
+            };
+
+            var musicaQuery = from m in musicas
+                              join g in generos on m.GeneroId equals g.Id
+                              select new { m, g };
+
+            foreach (var musica in musicaQuery)
+            {
+                Console.WriteLine($"{musica.m.Id}\t{musica.m.Nome}\t{musica.g.Nome}");
+            }
         }
     }
 
@@ -37,5 +54,12 @@
     {
         public int Id { get; set; }
         public string Nome { get; set; }
+    }
+
+    public class Musica
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public int GeneroId { get; set; }
     }
 }

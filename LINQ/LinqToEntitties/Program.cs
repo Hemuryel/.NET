@@ -145,6 +145,33 @@ namespace LinqToEntities
                         $"{agrupado.TotalPorAlbum}\t");
                 }
 
+                Console.WriteLine();
+
+                //3 consultas
+                var maiorVenda = contexto.NotaFiscal.Max(nf => nf.Total);
+                var menorVenda = contexto.NotaFiscal.Min(nf => nf.Total);
+                var vendaMedia = contexto.NotaFiscal.Average(nf => nf.Total);
+
+                Console.WriteLine($"A maior venda é {maiorVenda}");
+                Console.WriteLine($"A menor venda é {menorVenda}");
+                Console.WriteLine($"A venda média é {vendaMedia}");
+
+                Console.WriteLine();
+
+                //em uma única consulta
+                var vendas = (from nf in contexto.NotaFiscal
+                             group nf by 1 into agrupado
+                             select new
+                             {
+                                 maiorVenda = agrupado.Max(nf => nf.Total),
+                                 menorVenda = agrupado.Min(nf => nf.Total),
+                                 vendaMedia = agrupado.Average(nf => nf.Total)
+                             }).Single();
+
+                Console.WriteLine($"A maior venda é {vendas.maiorVenda}");
+                Console.WriteLine($"A menor venda é {vendas.menorVenda}");
+                Console.WriteLine($"A venda média é {vendas.vendaMedia}");
+
                 Console.ReadKey();
             }
         }

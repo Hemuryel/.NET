@@ -79,15 +79,55 @@ namespace LinqToEntities
                 Console.WriteLine();
 
                 var query4 = from alb in contexto.Albums
-                             select alb;
+                             where alb.Artista.Nome.Contains(textoBusca)
+                             select new
+                             {
+                                 NomeArtista = alb.Artista.Nome,
+                                 NomeAlbum = alb.Titulo
+                             };
 
-                foreach (var album in query4)
+                foreach (var item in query4)
                 {
-                    Console.WriteLine(album.Titulo);
+                    Console.WriteLine($"{item.NomeArtista}\t{item.NomeAlbum}");
                 }
+
+                GetFaixas(contexto, "Led Zeppelin", "");
+                GetFaixas(contexto, "Led Zeppelin", "Graffiti");
+
+                var query7 = "";
 
                 Console.ReadKey();
             }
+        }
+
+        private static void GetFaixas(AluraTunesEntities contexto, string buscaArtista, string buscaAlbum)
+        {
+            var query5 = from f in contexto.Faixas
+                         where f.Album.Artista.Nome.Contains(buscaArtista)
+                         select f;
+
+            if (!string.IsNullOrEmpty(buscaAlbum))
+            {
+                query5 = query5.Where(q => q.Album.Titulo.Contains(buscaAlbum));
+            }
+
+            query5 = query5.OrderBy(q => q.Album.Titulo).ThenByDescending(q => q.Nome);
+
+            foreach (var faixa in query5)
+            {
+                Console.WriteLine($"{faixa.Album.Titulo.PadRight(40)}\t{faixa.Nome}");
+            }
+
+
+            //teste
+            var query6 = from f in contexto.Faixas
+                         where f.Album.Artista.Nome.Contains(buscaArtista)
+                         && (!string.IsNullOrEmpty(buscaAlbum)
+                         ? f.Album.Titulo.Contains(buscaAlbum)
+                         : true)
+                         select f;
+
+            Console.WriteLine();
         }
     }
 }

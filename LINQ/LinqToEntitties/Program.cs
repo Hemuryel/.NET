@@ -94,7 +94,56 @@ namespace LinqToEntities
                 GetFaixas(contexto, "Led Zeppelin", "");
                 GetFaixas(contexto, "Led Zeppelin", "Graffiti");
 
-                var query7 = "";
+                var query7 = from f in contexto.Faixas
+                             where f.Album.Artista.Nome == "Led Zeppelin"
+                             select f;
+
+                var quantidade = query7.Count();
+                var quantidade2 =
+                    contexto
+                    .Faixas
+                    .Count(f => f.Album.Artista.Nome == "Led Zeppelin");
+
+                foreach (var faixa in query7)
+                {
+                    Console.WriteLine($"{faixa.Nome}\t{quantidade2}");
+                }
+
+                Console.WriteLine();
+
+                var query8 = from inf in contexto.ItemNotaFiscal
+                             where inf.Faixa.Album.Artista.Nome == "Led Zeppelin"
+                             select new { totalDoItem = inf.Quantidade * inf.PrecoUnitario };
+
+                var totalArtista = query8.Sum(q => q.totalDoItem);
+
+                //foreach (var inf in query8)
+                //{
+                //    Console.WriteLine($"{inf.Faixa.Nome}\t{inf.Quantidade}\t{inf.PrecoUnitario}");
+                //    Console.WriteLine($"{inf.totalDoItem}");
+                //}
+
+                Console.WriteLine($"Total do artista: {totalArtista}");
+
+                Console.WriteLine();
+
+                var query9 = from inf in contexto.ItemNotaFiscal
+                             where inf.Faixa.Album.Artista.Nome == "Led Zeppelin"
+                             group inf by inf.Faixa.Album into agrupado
+                             let vendasPorAlbum = agrupado.Sum(a => a.Quantidade * a.PrecoUnitario)
+                             orderby vendasPorAlbum descending
+                             select new
+                             {
+                                 TituloAlbum = agrupado.Key.Titulo,
+                                 TotalPorAlbum = vendasPorAlbum
+                             };
+
+                foreach (var agrupado in query9)
+                {
+                    Console.Write(
+                        $"{agrupado.TituloAlbum.PadRight(40)}\t" +
+                        $"{agrupado.TotalPorAlbum}\t");
+                }
 
                 Console.ReadKey();
             }

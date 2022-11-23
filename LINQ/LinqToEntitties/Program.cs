@@ -13,7 +13,8 @@ namespace LinqToEntities
         {
             using (var contexto = new AluraTunesEntities())
             {
-
+                var query = from g in contexto.Generos
+                            select g;
             }
         }
     }

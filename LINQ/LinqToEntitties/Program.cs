@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -160,20 +161,54 @@ namespace LinqToEntities
 
                 //em uma única consulta
                 var vendas = (from nf in contexto.NotaFiscal
-                             group nf by 1 into agrupado
-                             select new
-                             {
-                                 maiorVenda = agrupado.Max(nf => nf.Total),
-                                 menorVenda = agrupado.Min(nf => nf.Total),
-                                 vendaMedia = agrupado.Average(nf => nf.Total)
-                             }).Single();
+                              group nf by 1 into agrupado
+                              select new
+                              {
+                                  maiorVenda = agrupado.Max(nf => nf.Total),
+                                  menorVenda = agrupado.Min(nf => nf.Total),
+                                  vendaMedia = agrupado.Average(nf => nf.Total)
+                              }).Single();
 
                 Console.WriteLine($"A maior venda é {vendas.maiorVenda}");
                 Console.WriteLine($"A menor venda é {vendas.menorVenda}");
                 Console.WriteLine($"A venda média é {vendas.vendaMedia}");
 
+                Console.WriteLine();
+                Mediana3(contexto);
+                
+                //método de extensão
+                var vendaMedianaLinq = contexto.NotaFiscal.Mediana4(nf => nf.Total);
+
                 Console.ReadKey();
             }
+        }
+
+        private static void Mediana3(AluraTunesEntities contexto)
+        {
+            var vendaMedia2 = contexto.NotaFiscal.Average(nf => nf.Total);
+            Console.WriteLine($"vendaMedia {vendaMedia2}");
+
+            var query10 = from nf in contexto.NotaFiscal
+                          select nf.Total;
+
+            var contagem = query10.Count();
+            var queryOrdenada = query10.OrderBy(total => total);
+
+            var mediana = queryOrdenada.Skip(contagem / 2).First();
+            Console.WriteLine($"mediana {mediana}");
+            Console.WriteLine();
+        }
+
+        private static decimal Mediana2(IQueryable<decimal> query)
+        {
+            var contagem = query.Count();
+            var queryOrdenada = query.OrderBy(total => total);
+
+            var elementoCentral_1 = queryOrdenada.Skip(contagem / 2).First();
+            var elementoCentral_2 = queryOrdenada.Skip(contagem - 1 / 2).First();
+
+            var mediana = (elementoCentral_1 + elementoCentral_2) / 2;
+            return mediana;
         }
 
         private static void GetFaixas(AluraTunesEntities contexto, string buscaArtista, string buscaAlbum)
@@ -204,6 +239,22 @@ namespace LinqToEntities
                          select f;
 
             Console.WriteLine();
+        }
+    }
+
+    static class LinqExtension
+    {
+        public static decimal Mediana4<TSource>(this IQueryable<TSource> source, Expression<Func<TSource, decimal>> selector)
+        {
+            var contagem = source.Count();
+            var funcSelector = selector.Compile();
+            var queryOrdenada = source.Select(funcSelector).OrderBy(total => total);
+
+            var elementoCentral_1 = queryOrdenada.Skip(contagem / 2).First();
+            var elementoCentral_2 = queryOrdenada.Skip(contagem - 1 / 2).First();
+
+            var mediana = (elementoCentral_1 + elementoCentral_2) / 2;
+            return mediana;
         }
     }
 }

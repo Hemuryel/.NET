@@ -136,6 +136,7 @@
     <Compile Include="Data\TipoMidia.cs">
       <DependentUpon>AluraTunes.tt</DependentUpon>
     </Compile>
+    <Compile Include="LinqExtensionHelpers.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>

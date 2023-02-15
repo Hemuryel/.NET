@@ -1,0 +1,25 @@
+﻿@page
+@model WebApplicationRazorPages01.Pages.AdicionarAvisoModel
+@{
+    ViewData["Title"] = "Adicionar Aviso";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div class="row">
+    <div class="col-md-10">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Item.Nome"></label>
+                <input class="form-control" asp-for="Item.Nome" />
+                @Html.ValidationMessageFor(m => m.Item.Nome)
+            </div>
+            <div class="form-group">
+                <label asp-for="Item.Mensagem"></label>
+                <textarea classe="form-contro" asp-for="Item.Mensagem"></textarea>
+                @Html.ValidationMessageFor(m => m.Item.Mensagem)
+            </div>
+            <input type="hidden" asp-for="Item.Hora" />
+            <button type="submit" class="btn-default">Está avisado</button>
+        </form>
+    </div>
+</div>

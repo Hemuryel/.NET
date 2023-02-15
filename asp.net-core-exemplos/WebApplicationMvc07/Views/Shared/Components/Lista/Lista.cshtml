@@ -1,0 +1,16 @@
+﻿@model IEnumerable<string>
+
+<style type="text/css">
+    li { font-size: 20px; }
+</style>
+
+@if(ViewData["Titulo"] != null)
+{
+    <h2>@ViewData["Titulo"]</h2>
+}
+
+<ul>
+    @foreach(var item in Model){ 
+        <li>@item</li>
+    }
+</ul>

@@ -1,0 +1,30 @@
+﻿<!--ViewData e ViewBag são fracamente tipados, usados para passar pequenas porções de dados-->
+<!--ViewData baseado em dictionary-->
+@{ /*bloco de código sintaxe Razor*/
+    var endereco = ViewData["Endereco"] as Endereco;
+}
+<!--variáveis sintaxe Razor-->
+<h1>@ViewData["Saudacao"] Mundo !!!</h1>
+<h2>@ViewData["DataInicio"]</h2>
+<hr />
+
+@endereco.Nome
+<br />
+@endereco.Rua
+<br />
+@endereco.Cidade, @endereco.Estado
+<br />
+<hr />
+
+<!--ViewBag baseado em dynamic, não necesista conversão tipo complexo-->
+<h1>@ViewBag.Saudacao Mundo !!!</h1>
+<h2>@ViewBag.DataInicio</h2>
+<hr />
+
+@ViewBag.Endereco.Nome
+<br />
+@ViewBag.Endereco.Rua
+<br />
+@ViewBag.Endereco.Cidade, @ViewBag.Endereco.Estado
+<br />
+<hr />

@@ -1,0 +1,33 @@
+﻿@page
+@inject WebApplicationRazorPages01.Data.AvisoContext dataContext
+@{ 
+    ViewData["Title"] = "Home Page";
+
+    var avisos = dataContext.Avisos
+                            .OrderByDescending(s => s.Hora)
+                            .Take(100)
+                            .ToList();
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="row">
+    <div class="col-md-10">
+        @if (avisos.Any())
+        {
+            foreach (var aviso in avisos)
+            {
+                <p>
+                    <strong>@aviso.Nome</strong> | @aviso.Hora.ToString()<br />
+                    @Html.Raw(aviso.Mensagem.Replace("\r\n", "<br />"))
+                </p>
+            }
+        }
+        else
+        {
+            <p>Nenhum aviso publicado! Seja o primeiro...</p>
+        }
+    </div>
+</div>
+
+<a href="AdicionarAviso">Adicionar Novo aviso</a>

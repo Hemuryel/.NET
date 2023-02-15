@@ -1,0 +1,19 @@
+﻿@{ 
+    ViewData["Title"] = "Index";
+}
+
+<h2>Admin</h2>
+
+<hr />
+<div class="container">
+    <div class="jumbotron">
+        <h3>Área do Administrador</h3>
+        <p>
+            Esta é a área do administradores
+        </p>
+    </div>
+    <p>Admin</p>
+    <a asp-area="" asp-controller="Home" asp-action="Index">Volta a Home Page</a> |
+    <a asp-area="Produtos" asp-controller="Produto" asp-action="Index">Produtos</a> |
+    <a asp-area="Admin" asp-controller="Admin" asp-action="Informacoes">Informações</a>
+</div>

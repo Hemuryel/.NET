@@ -1,0 +1,28 @@
+﻿@model WebApplicationMvc03.ViewModel.ClientePedidoViewModel
+<!--diretiva = model, propriedade = Model-->
+
+<h1>Cliente</h1>
+
+<hr /> 
+
+@Model.Cliente.ClienteId<br />
+@Model.Cliente.Nome<br />
+@Model.Cliente.Email<br />
+
+<h1>Pedidos</h1>
+<hr />
+
+@if (Model.Pedidos.Count == 0)
+{
+    <p>Nenhum pedido para o cliente</p>
+}
+else
+{
+    <ul>
+        @foreach (var pedido in Model.Pedidos)
+        {
+            <li>@pedido.Nome</li>
+        }
+    </ul>
+}
+

@@ -1,0 +1,71 @@
+﻿<h1>Cadastro de Cliente</h1>
+<hr>
+
+<!-- Sem HtmlHelpers-->
+Sem HtmlHelpers
+<form action="/Cliente/Index" method="post">
+    Id:
+    <input type="text" name="Id" /><br />
+    Nome:
+    <input type="text" name="Nome" /><br />
+    E-mail:
+    <input type="text" name="Email" /><br />
+    <button type="submit">Salvar</button>
+</form>
+
+<hr />
+
+<!-- Com HtmlHelpers-->
+Com HtmlHelpers
+
+@{
+    var listaPaises = new List<SelectListItem>()
+{
+        new SelectListItem() { Value="1", Text="Brasil"},
+        new SelectListItem() { Value="2", Text="Portugal"},
+        new SelectListItem() { Value="3", Text="Angola"}
+    };
+}
+
+@using (Html.BeginForm("Index", "Cliente", FormMethod.Post))
+{
+    @Html.Label("Id")
+    @Html.TextBox("Id")
+    <br />
+    @Html.Label("Nome")
+    @Html.TextBox("Nome")
+    <br />
+    @Html.Label("Email")
+    @Html.TextBox("Email")
+    <br />
+
+    <!--Exemplos-->
+    @Html.Label("Senha")
+    @Html.Password("Senha")
+    <br />
+    @Html.Label("Masculino")
+    @Html.RadioButton("Sexo", "Masculino")
+    @Html.Label("Feminino")
+    @Html.RadioButton("Sexo", "Feminino")
+    <br />
+    @Html.Label("Lembrar")
+    @Html.CheckBox("Lembrar")
+    <br />
+    <!--Lista suspensa-->
+    @Html.Label("Pais")
+    @Html.DropDownList("Pais", listaPaises)
+    <br />
+    <button type="submit">Salvar</button>
+}
+
+Com TagHelpers
+<form asp-controller="Cliente" asp-action="Index" method="post">
+    @Html.Label("Nome")
+    @Html.TextBox("Nome")
+    ...
+</form>
+
+@if (ViewBag.Erro != null)
+{
+    <h2>@ViewBag.Erro</h2>
+}

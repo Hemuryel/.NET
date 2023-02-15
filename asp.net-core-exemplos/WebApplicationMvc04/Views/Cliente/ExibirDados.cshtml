@@ -1,0 +1,44 @@
+﻿@model WebApplicationMvc04.Models.Cliente
+
+<h1>Dados do cliente</h1>
+
+Sem HtmlHelpers
+<hr />
+Id:
+<label for="Id">@Model.Id</label>
+<br />
+Nome:
+<label for="Id">@Model.Nome</label>
+<br />
+E-mail :
+<label for="Id">@Model.Email</label>
+<br />
+
+<a href="/Cliente/Index">Retornar</a>
+
+<hr />
+
+Com HtmlHelpers fortemente tipado (usado para Model)
+<br />
+@Html.LabelFor(model => model.Id)
+@*@Html.LabelFor(model => model.Id)*@
+@Html.DisplayFor(model => model.Id)
+<br />
+@Html.LabelFor(model => model.Nome)
+@*Html.TextBoxFor(model => model.Nome)*@
+@Html.EditorFor(model => model.Nome)
+@*EditorFor adivinha qual renderizar de acordo com propriedade
+    string = TextoBox*@
+<br />
+@Html.LabelFor(model => model.Email)
+@Html.TextBoxFor(model => model.Email)
+<br />
+@Html.ActionLink("Retornar", "Index", "Cliente") <!--Texto, Controller, Action-->
+
+<br /><br />
+Com TagHelpers
+@Html.LabelFor(model => model.Id)
+<input asp-for="Id" />
+@Html.LabelFor(model => model.Nome)
+<input asp-for="Nome" />
+

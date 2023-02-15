@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<br />
+@{
+    ViewData["Titulo"] = "Cidades";
+}
+
+@*2 formas de usar Component*@
+@await Component.InvokeAsync("Lista", new { sequencia = "Santos, Campinas, Sorocaba1" })
+
+<br />TESTE
+@{ 
+    ViewData["Titulo"] = "Times";
+}
+@*usando com TagHelper + importação em _ViewImports.cshtml*@
+<vc:lista sequencia="Santos,Vasco,Flamengo,Sport"></vc:lista>
+ 

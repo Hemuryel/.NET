@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@Html.Partial("_MenuView")
+
+@*Procura na pasta do Controller Home e depois no Shared, 
+    se outro Controler tentar usar, ocorrerá erro, 
+    pois não encontrará na Shared*@
+@Html.Partial("_AlertaView")
+
+<h1>Usando Partial Views</h1>
+<hr />
+
+ASP .NET Core
+
+@{ 
+    Html.RenderPartial("_RodapeView");
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@

@@ -1,0 +1,12 @@
+﻿@{
+    Exception ex = ViewData["HandleException"] as Exception;
+}
+<hr />
+<div class="container">
+    <div class="jumbotron">
+        <h2>@ex.Message</h2>
+        <p>
+            <div>@ex.StackTrace</div>
+        </p>
+    </div>
+</div>
